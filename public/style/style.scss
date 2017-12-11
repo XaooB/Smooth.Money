@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+$dark: #1c2f4d;
+$green: #99cc00;
+
+@font-face {
+  font-family: 'Open Sans';
+  font-size: 1em;
+}
+
+body {
+  background: #1c2f4d;
+  color: $green;
+  font-size: 16px; //1em
+}

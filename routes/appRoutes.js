@@ -1,3 +1,5 @@
 exports.home = (req, res) => {
-  res.send('Strona główna');
+  res.render('home', {
+    title: 'Strona Główna'
+  });
 };
