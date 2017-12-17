@@ -3,12 +3,22 @@
   padding: 0;
 }
 
+$light: #2b4164;
 $dark: #1c2f4d;
 $green: #99cc00;
 
+small {
+  font-weight: normal;
+}
+
 @font-face {
   font-family: 'Open Sans';
-  font-size: 1em;
+  src: url('/assets/fonts/OpenSans-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'KG Arrows';
+  src: url('/assets/fonts/KGArrows.ttf') format('ttf');
 }
 
 body {
@@ -75,12 +85,23 @@ body {
     color: $green;
   }
   &:hover {
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 14px;
+      left: 50%;
+      background: $green;
+      width: 6px;
+      height: 6px;
+      border-radius: 100%;
+      transform: translateX(-50%);
+    }
     &:after {
       content: '';
       position: absolute;
       bottom: 16px;
       left: 50%;
-      width: 15px;
+      width: 18px;
       height: 2px;
       background: $green;
       transform: translateX(-50%);
@@ -94,9 +115,57 @@ body {
 }
 
 .introduction {
-  position: absolute;
-  left: 50%;
-  top: 50%;
   text-align: center;
+  margin-top: 10vh; //testing phase
+}
+
+.introduction__title {
+  height: 30vh;
+}
+
+.introduction__info {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.introduction__imp {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: $green;
+}
+
+.introduction__scroll {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
   transform: translate(-50%);
+  font-size: 4em;
+  font-family: 'KG Arrows';
+  transform: rotate(90deg);
+  a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.07);
+  }
+}
+
+.btn {
+  border-radius: 10px;
+  padding: 12px;
+  border: none;
+  margin: 0 10px;
+  width: 130px;
+  font-size: 0.8125em;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+.btn--success {
+  background: $green;
+}
+
+.btn--info {
+  background: $light;
 }
