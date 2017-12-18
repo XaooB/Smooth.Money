@@ -11,6 +11,7 @@ app.set('view engine', 'handlebars');
 app.use('/assets', express.static('public'));
 
 router.get('/', appRoutes.home);
+router.get('/logowanie', appRoutes.login);
 
 app.use('/', router);
 

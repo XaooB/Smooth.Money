@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 $light: #2b4164;
@@ -19,6 +20,11 @@ small {
 @font-face {
   font-family: 'KG Arrows';
   src: url('/assets/fonts/KGArrows.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Adequate';
+  src: url('/assets/fonts/Adequate-ExtraLight.ttf') format('ttf');
 }
 
 body {
@@ -166,6 +172,79 @@ body {
   background: $green;
 }
 
-.btn--info {
+.btn--infolight {
   background: $light;
+}
+
+.btn--infodark {
+  background: $dark;
+}
+
+.logowanie {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.logowanie__wrapper {
+  background: $light;
+  margin-top: 30px;
+  padding: 30px 0;
+  overflow: hidden;
+}
+
+.logowanie__formbox {
+  margin: 0 15px;
+  display: inline-block;
+  float: left;
+  width: 320px;
+}
+
+.s {
+  width: 710px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.logowanie__head {
+  padding: 25px;
+  background: $light;
+  font-family: 'Adequate';
+  font-size: 3em;
+  padding-bottom: 15px;
+}
+
+.logowanie__title {
+  text-align: left;
+  font-weight: lighter;
+  padding-bottom: 6px;
+  border-bottom: 2px solid $green;
+}
+
+.logowanie__form {
+  text-align: left;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 10px;
+  padding-bottom: 4px;
+  label {
+    margin: 20px 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    font-size: 0.8em;
+  }
+  input {
+    width: 100%;
+    margin-top: 2px;
+    color: #fff;
+    border: 2px solid $green;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+  }
+  label,
+  input {
+    display: block;
+  }
 }

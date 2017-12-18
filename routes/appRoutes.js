@@ -3,3 +3,7 @@ exports.home = (req, res) => {
     title: 'Strona Główna'
   });
 };
+
+exports.login = (req, res) => {
+  res.render('logowanie');
+};

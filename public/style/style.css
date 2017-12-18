@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 small {
   font-weight: normal; }
@@ -11,6 +12,9 @@ small {
 @font-face {
   font-family: 'KG Arrows';
   src: url("/assets/fonts/KGArrows.ttf") format("ttf"); }
+@font-face {
+  font-family: 'Adequate';
+  src: url("/assets/fonts/Adequate-ExtraLight.ttf") format("ttf"); }
 body {
   background: #1c2f4d;
   color: #ffffff;
@@ -138,7 +142,69 @@ body {
 .btn--success {
   background: #99cc00; }
 
-.btn--info {
+.btn--infolight {
   background: #2b4164; }
+
+.btn--infodark {
+  background: #1c2f4d; }
+
+.logowanie {
+  margin-top: 100px;
+  text-align: center; }
+
+.logowanie__wrapper {
+  background: #2b4164;
+  margin-top: 30px;
+  padding: 30px 0;
+  overflow: hidden; }
+
+.logowanie__formbox {
+  margin: 0 15px;
+  display: inline-block;
+  float: left;
+  width: 320px; }
+
+.s {
+  width: 710px;
+  overflow: hidden;
+  margin: 0 auto; }
+
+.logowanie__head {
+  padding: 25px;
+  background: #2b4164;
+  font-family: 'Adequate';
+  font-size: 3em;
+  padding-bottom: 15px; }
+
+.logowanie__title {
+  text-align: left;
+  font-weight: lighter;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #99cc00; }
+
+.logowanie__form {
+  text-align: left;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 10px;
+  padding-bottom: 4px; }
+  .logowanie__form label {
+    margin: 20px 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    font-size: 0.8em; }
+  .logowanie__form input {
+    width: 100%;
+    margin-top: 2px;
+    color: #fff;
+    border: 2px solid #99cc00;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 10px; }
+  .logowanie__form label,
+  .logowanie__form input {
+    display: block; }
 
 /*# sourceMappingURL=style.css.map */
