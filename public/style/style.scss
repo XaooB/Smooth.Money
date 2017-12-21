@@ -27,7 +27,29 @@ small {
   src: url('/assets/fonts/Adequate-ExtraLight.ttf') format('ttf');
 }
 
+.group:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.highlight {
+  color: #99cc00;
+  font-weight: bold;
+}
+
+.text {
+  font-weight: 500;
+  color: $dark;
+}
+
+.text--big {
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
 body {
+  line-height: 1.5;
   background: #1c2f4d;
   color: #ffffff;
   font-size: 16px; //1em
@@ -91,17 +113,6 @@ body {
     color: $green;
   }
   &:hover {
-    &:before {
-      content: '';
-      position: absolute;
-      bottom: 14px;
-      left: 50%;
-      background: $green;
-      width: 6px;
-      height: 6px;
-      border-radius: 100%;
-      transform: translateX(-50%);
-    }
     &:after {
       content: '';
       position: absolute;
@@ -155,29 +166,48 @@ body {
 }
 
 .btn {
-  border-radius: 10px;
-  padding: 12px;
+  font-weight: bold;
+  padding: 11px;
   border: none;
+  background: transparent;
   margin: 0 10px;
-  width: 130px;
+  width: 128px;
   font-size: 0.8125em;
   color: white;
   text-align: center;
   cursor: pointer;
   text-transform: uppercase;
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  &:first-of-type {
+    margin-left: 4px;
+  }
 }
 
 .btn--success {
   background: $green;
+  &:active,
+  &:hover,
+  &:focus {
+    background: #81ad00;
+  }
 }
 
 .btn--infolight {
   background: $light;
+  &:active,
+  &:hover,
+  &:focus {
+    background: #263b5b;
+  }
 }
 
 .btn--infodark {
   background: $dark;
+  &:active,
+  &:hover,
+  &:focus {
+    background: #182944;
+  }
 }
 
 .logowanie {
@@ -220,7 +250,8 @@ body {
   border-bottom: 2px solid $green;
 }
 
-.logowanie__form {
+.logowanie__form,
+.feed__form {
   text-align: left;
   width: 100%;
   overflow: hidden;
@@ -236,15 +267,124 @@ body {
   input {
     width: 100%;
     margin-top: 2px;
-    color: #fff;
+    color: $dark;
     border: 2px solid $green;
     background: transparent;
     padding: 10px;
     outline: none;
-    border-radius: 10px;
+    background: $green;
+    box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.2);
   }
   label,
   input {
     display: block;
   }
+}
+
+.about {
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+  color: $dark;
+}
+
+.about__head {
+  position: relative;
+  padding: 8px;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    width: 50px;
+    height: 3px;
+    background: $green;
+    transform: translateX(-50%);
+  }
+}
+
+.about__group {
+  overflow: hidden;
+  margin: 50px 0;
+}
+
+.about__item {
+  width: 32%;
+  border: 6px solid $green;
+  float: left;
+  padding: 35px;
+  margin-right: 2%;
+  background: rgba(0, 0, 0, 0.08);
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.about__describe {
+  text-align: justify;
+  display: block;
+  margin-top: 35px;
+}
+
+.workflow {
+  width: 70%;
+  text-align: left;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item {
+  margin-bottom: 30px;
+  padding: 4px 10px;
+  width: 50%;
+  float: left;
+  height: inherit;
+  text-align: center;
+  &:nth-child(2) {
+    border-left: 2px solid $green;
+  }
+  p {
+    height: 100%;
+    text-align: justify;
+  }
+}
+
+.feed {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.feed__form--width {
+  padding: 20px;
+  max-width: 500px;
+  margin: 20px auto;
+  button {
+    float: left;
+    width: 10%;
+    padding: 12px;
+    margin-top: 2px;
+    background: $green;
+    border: none;
+    color: $light;
+    cursor: pointer;
+    &:hover {
+      background: #81ad00;
+      color: $dark;
+    }
+  }
+  input {
+    width: 90%;
+    float: left;
+    background: #fcfcfc;
+  }
+}
+
+.lottery {
+  color: $dark;
+  text-align: center;
+  padding: 50px;
+  background: #fff;
 }
