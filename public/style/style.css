@@ -44,7 +44,7 @@ body {
   margin: 0 auto;
   padding: 0 10px; }
 
-.landing {
+#landing {
   height: 100vh;
   position: relative;
   overflow: hidden; }
@@ -228,7 +228,7 @@ body {
   .feed__form input {
     display: block; }
 
-.about {
+#about {
   background: #fff;
   width: 100%;
   text-align: center;
@@ -291,8 +291,9 @@ body {
 
 .feed {
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 20px; }
+  padding-top: 60px;
+  padding-bottom: 40px;
+  position: relative; }
 
 .feed__form--width {
   padding: 20px;
@@ -314,6 +315,51 @@ body {
     width: 90%;
     float: left;
     background: #fcfcfc; }
+
+.circle {
+  display: block;
+  border-radius: 100%;
+  background: #99cc00;
+  position: absolute;
+  left: 190px;
+  top: 15px;
+  z-index: -1; }
+
+.circle--a {
+  width: 120px;
+  height: 120px;
+  left: 12%;
+  top: 2%; }
+
+.circle--b {
+  width: 300px;
+  height: 300px;
+  left: 70%;
+  top: 85%; }
+
+.circle--c {
+  width: 65px;
+  height: 65px;
+  left: 55%;
+  top: 50%; }
+
+.circle--d {
+  width: 10px;
+  height: 10px;
+  left: 55%;
+  top: 46%; }
+
+.circle--e {
+  width: 16px;
+  height: 16px;
+  left: 70%;
+  top: 7%; }
+
+.circle--f {
+  width: 30px;
+  height: 30px;
+  left: 31%;
+  top: 80%; }
 
 .lottery {
   color: #1c2f4d;
