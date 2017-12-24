@@ -233,10 +233,9 @@ body {
     margin-top: 2px;
     color: #1c2f4d;
     border: 2px solid #99cc00;
-    background: transparent;
     padding: 10px;
     outline: none;
-    background: #99cc00;
+    background: #fff;
     box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.2); }
   .logowanie__form label,
   .logowanie__form input,
@@ -411,7 +410,8 @@ body {
 
 .lottery__head--small {
   font-size: 0.9em;
-  padding: 0; }
+  padding-top: 0;
+  padding-bottom: 8px; }
 
 .blog__wrapper {
   overflow: hidden; }
