@@ -387,8 +387,8 @@ body {
   }
 }
 
-.feed,
-.contact {
+#feed,
+#contact {
   text-align: center;
   padding: 50px;
   position: relative;
@@ -471,12 +471,16 @@ body {
   top: 80%;
 }
 
-.lottery,
-.blog {
+#lottery,
+#blog {
   color: $dark;
   text-align: center;
   padding: 50px;
   background: #fff;
+}
+
+#blog {
+  background: #f4f9e5;
 }
 
 .lottery__head {
@@ -495,10 +499,6 @@ body {
 .lottery__head--small {
   font-size: 0.9em;
   padding: 0;
-}
-
-.blog {
-  background: #f4f9e5;
 }
 
 .blog__wrapper {

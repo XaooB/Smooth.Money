@@ -316,8 +316,8 @@ body {
     height: 100%;
     text-align: justify; }
 
-.feed,
-.contact {
+#feed,
+#contact {
   text-align: center;
   padding: 50px;
   position: relative; }
@@ -388,12 +388,15 @@ body {
   left: 31%;
   top: 80%; }
 
-.lottery,
-.blog {
+#lottery,
+#blog {
   color: #1c2f4d;
   text-align: center;
   padding: 50px;
   background: #fff; }
+
+#blog {
+  background: #f4f9e5; }
 
 .lottery__head {
   text-transform: uppercase;
@@ -409,9 +412,6 @@ body {
 .lottery__head--small {
   font-size: 0.9em;
   padding: 0; }
-
-.blog {
-  background: #f4f9e5; }
 
 .blog__wrapper {
   overflow: hidden; }
