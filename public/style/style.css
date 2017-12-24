@@ -20,6 +20,10 @@ small {
   display: table;
   clear: both; }
 
+.p5 {
+  padding-top: 4px;
+  padding-bottom: 10px; }
+
 .highlight {
   color: #99cc00;
   font-weight: bold; }
@@ -31,6 +35,18 @@ small {
 .text--big {
   text-transform: uppercase;
   font-size: 2em; }
+
+.text--average {
+  font-size: 1.6em; }
+
+.text--small {
+  font-size: 1em; }
+
+.text--tiny {
+  font-size: 0.9em; }
+
+.text--left {
+  text-align: left; }
 
 body {
   line-height: 1.5;
@@ -251,18 +267,29 @@ body {
             transform: translateX(-50%); }
 
 .about__group {
-  overflow: hidden;
   margin: 50px 0; }
 
 .about__item {
   width: 32%;
-  border: 6px solid #99cc00;
   float: left;
   padding: 35px;
   margin-right: 2%;
-  background: rgba(0, 0, 0, 0.08); }
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); }
+  .about__item a {
+    display: block;
+    text-decoration: none;
+    color: inherit; }
   .about__item:last-child {
     margin: 0; }
+
+.about__item--blog {
+  border: none;
+  text-align: left;
+  padding: 0;
+  background: #fff;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); }
+  .about__item--blog h4 {
+    text-indent: 8px; }
 
 .about__describe {
   text-align: justify;
@@ -289,10 +316,10 @@ body {
     height: 100%;
     text-align: justify; }
 
-.feed {
+.feed,
+.contact {
   text-align: center;
-  padding-top: 60px;
-  padding-bottom: 40px;
+  padding: 50px;
   position: relative; }
 
 .feed__form--width {
@@ -341,13 +368,13 @@ body {
   width: 65px;
   height: 65px;
   left: 55%;
-  top: 50%; }
+  top: 47%; }
 
 .circle--d {
   width: 10px;
   height: 10px;
   left: 55%;
-  top: 46%; }
+  top: 44%; }
 
 .circle--e {
   width: 16px;
@@ -361,10 +388,50 @@ body {
   left: 31%;
   top: 80%; }
 
-.lottery {
+.lottery,
+.blog {
   color: #1c2f4d;
   text-align: center;
   padding: 50px;
   background: #fff; }
+
+.lottery__head {
+  text-transform: uppercase;
+  padding: 50px;
+  font-size: 1.8em;
+  font-weight: 400;
+  line-height: 1.1; }
+
+.lottery__head--normal {
+  font-size: 1.1em;
+  padding: 10px; }
+
+.lottery__head--small {
+  font-size: 0.9em;
+  padding: 0; }
+
+.blog {
+  background: #f4f9e5; }
+
+.blog__wrapper {
+  overflow: hidden; }
+
+.blog__item {
+  float: left;
+  width: 30%; }
+
+.blog__pages {
+  padding: 5px; }
+  .blog__pages a {
+    color: #2b4164;
+    padding: 2px; }
+
+.image__wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100px; }
+
+.text__wrapper {
+  padding: 8px; }
 
 /*# sourceMappingURL=style.css.map */
